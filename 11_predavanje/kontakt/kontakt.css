@@ -1,0 +1,51 @@
+/* Generalni stilovi */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap; /*omogućuje da se sadržaj containter-a, u ovom slučaju .info i .form, prelama u donji red ako nema dovoljno mjesta na zaslonu*/
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff8dc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info, .form {
+    flex: 1; /*Svaki dio unutar .container klase koja ima svojstvo diplay:flex zauzima jednaku količinu prostora - u ovom slučaju po 50% jer su dva dijela */
+    padding: 20px;
+    box-sizing: border-box; /*padding i border ne mijenjaju veličinu elementa što olakšava kreiranje responzivnog dizajna*/
+  }
+  
+  form {
+    display: flex; 
+    flex-direction: column;
+  }
+  
+  input, textarea, button {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    max-width: 400px;
+  }
+  
+  button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+  }
+  
+  /* Responzivnost */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+  
