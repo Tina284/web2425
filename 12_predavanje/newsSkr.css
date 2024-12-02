@@ -1,0 +1,131 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: sans-serif;
+	background-color: #e7e7e7;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+.bottomlinks ul{
+	list-style: none;
+	padding: 0;
+}
+
+.news img,.sidebar img{
+	box-sizing: border-box;
+	width: 100%;
+}
+.articlecontent{
+	padding: 1rem;
+}
+.article{
+	margin-bottom: 1rem;
+	margin-left: 1rem;
+	background-color:white;
+}
+.pins{
+	padding: 1rem;
+	margin-bottom: 1rem;
+	background-color:white;	
+}
+.footer{
+	background-color:rgba(0, 0, 0, 0.96);
+	color: white;
+}
+.footer .bottomlinks{
+	text-align: left;
+}
+.header{
+	background-color: white;
+	margin-bottom: 1rem;
+}
+img{
+	max-width: 100%                    /* primijenjuje svojstvo responzivnosti na sve fotografije */
+}
+
+
+
+/************************** flex box ***************************/
+
+.container{
+	display: flex;
+}
+
+.header{
+	box-sizing: border-box;      /* zadana širina uključuje i obrub i padding */
+	width:100%;		     /* postavlja širinu na 100% širine stranice */
+	text-align: center;
+}
+.footer{
+	box-sizing: border-box;
+	width:100%;              /* postavlja širinu na 100% širine stranice */
+}
+ 
+.footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;  /* izjednačava prostor među i okolo linkova */
+}
+
+.news{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;		/*wrap svojstvo omogućava prelazak fleksibilnih elemenata u novi red, ako je to potrebno*/
+}
+
+/****************** media queries *********************/
+/******************** mobiles *****************************/
+@media screen and (max-width: 650px){
+	.container{
+		flex-direction: column;
+	}
+	
+}
+/****************************** tablets **************************/
+@media screen and (min-width: 651px) and (max-width: 830px){
+	.container{
+		flex-wrap: wrap;
+	}
+	.news{
+		box-sizing: border-box;
+		flex:3;                  /* vijesti zauzimaju 3/4 širine stranice, a bočna traka s vijestima 1/4 */
+		margin-right: 1rem;
+	}
+	.sidebar{
+		box-sizing: border-box;
+		flex:1; 		/* vijesti zauzimaju 3/4 širine stranice, a bočna traka s vijestima 1/4 */
+	}
+}
+/********************************** Desktops **************************/
+
+@media screen and (min-width: 831px){
+	.container{
+		flex-wrap: wrap;
+	}
+	.news{
+		box-sizing: border-box;
+		flex:3;                  /* vijesti zauzimaju 3/4 širine stranice, a bočna traka s vijestima 1/4 */
+		margin-right: 1rem;
+	}
+	.sidebar{
+		box-sizing: border-box;
+		flex:1;         	/* vijesti zauzimaju 3/4 širine stranice, a bočna traka s vijestima 1/4 */
+		
+	}
+	.big{
+		width: 100%
+	}
+	.medium{
+		flex: 2;                   /* tako da 2 mogu stajati jedan do drugog */
+	}
+	.small{
+		flex: 1;                  /* tako da 3 mogu stajati jedan do drugog */
+	}
+
+}
+
+
