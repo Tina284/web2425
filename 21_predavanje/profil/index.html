@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+</head>
+<body>
+    <h1 id="naslov">Profil</h1>
+    <div id="form-container">
+        <form id="profile-form">
+            <label for="ime">Ime: </label> <br>
+            <input type="text" id="ime" required> <br>
+            <label for="prezime">Prezime: </label> <br>
+            <input type="text" id="prezime" required> <br>
+            <label for="spol">Spol: </label> <br>
+            <select id="spol" required>
+                <option value="M">Muško</option>
+                <option value="Ž">Žensko</option>
+            </select><br>
+            <label for="email">Email: </label> <br>
+            <input type="email" id="email" required> <br><br>
+            <button type="submit" onclick="izmjena(event)">Submit</button>
+        </form>
+    </div>
+
+    <script src="profili.js"></script>
+</body>
+</html>
