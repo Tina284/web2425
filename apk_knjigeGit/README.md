@@ -18,6 +18,7 @@ Za korištenje ove datoteke potrebno je napraviti sljedeće korake u Terminalu (
     4. npm install cors --> instalacija cors biblioteke za komunikaciju s frontendom
 
 Backend aplikacije se pokreće iz terminala naredbom: node server
+
 Backend je moguće testirati primjerice pomoću Postman-a
 
 
