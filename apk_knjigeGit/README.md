@@ -24,7 +24,7 @@ Backend je moguće testirati primjerice pomoću Postman-a
 
 **FRONTEND**
 
-Obratiti pažnju na povezivanje na backend. U ovom primjeru sa predavanja frontend se pokretao pomoću Live Server ekstenzije.
+Obratiti pažnju na povezivanje na backend. U ovom primjeru sa predavanja frontend se pokreće pomoću Live Server ekstenzije.
 
 
 
